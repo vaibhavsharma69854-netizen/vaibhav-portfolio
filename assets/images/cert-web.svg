@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cWebBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240c1d" />
+      <stop offset="100%" stop-color="#0a0308" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" rx="12" fill="url(#cWebBg)" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1.5" />
+  <rect x="20" y="20" width="360" height="220" rx="8" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-dasharray="4 4" />
+  
+  <g transform="translate(200, 85)">
+    <circle cx="0" cy="0" r="32" fill="#3b112d" stroke="#ec4899" stroke-width="2" />
+    <text x="0" y="8" font-family="monospace" font-size="16" font-weight="bold" fill="#f472b6" text-anchor="middle">&lt;DEV/&gt;</text>
+  </g>
+
+  <text x="200" y="150" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#f8fafc" text-anchor="middle">Modern Web &amp; Git Workflows</text>
+  <text x="200" y="172" font-family="monospace" font-size="11" fill="#ec4899" text-anchor="middle">freeCodeCamp / Open Source</text>
+  
+  <g transform="translate(200, 210)">
+    <rect x="-85" y="-12" width="170" height="24" rx="12" fill="rgba(236, 72, 153, 0.1)" stroke="#ec4899" stroke-width="1" />
+    <text x="0" y="4" font-family="monospace" font-size="10" fill="#f472b6" text-anchor="middle">VERIFIED CREDENTIAL</text>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cRobBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061f17" />
+      <stop offset="100%" stop-color="#020806" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="260" rx="12" fill="url(#cRobBg)" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1.5" />
+  <rect x="20" y="20" width="360" height="220" rx="8" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-dasharray="4 4" />
+  
+  <g transform="translate(200, 85)">
+    <circle cx="0" cy="0" r="32" fill="#0c382b" stroke="#10b981" stroke-width="2" />
+    <rect x="-14" y="-14" width="28" height="28" rx="4" fill="none" stroke="#34d399" stroke-width="1.5" />
+    <circle cx="0" cy="0" r="5" fill="#10b981" />
+  </g>
+
+  <text x="200" y="150" font-family="system-ui, sans-serif" font-size="14" font-weight="bold" fill="#f8fafc" text-anchor="middle">Robotics &amp; Embedded Systems</text>
+  <text x="200" y="172" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle">Arduino &amp; Microcontroller Academy</text>
+  
+  <g transform="translate(200, 210)">
+    <rect x="-85" y="-12" width="170" height="24" rx="12" fill="rgba(16, 185, 129, 0.1)" stroke="#10b981" stroke-width="1" />
+    <text x="0" y="4" font-family="monospace" font-size="10" fill="#34d399" text-anchor="middle">VERIFIED CREDENTIAL</text>
+  </g>
+</svg>

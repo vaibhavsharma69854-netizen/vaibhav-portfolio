@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="docBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="800" rx="12" fill="url(#docBg)" stroke="rgba(0, 240, 255, 0.25)" stroke-width="2" />
+  
+  <!-- Document Header -->
+  <rect x="40" y="40" width="520" height="90" rx="6" fill="#131e33" stroke="rgba(59, 130, 246, 0.2)" stroke-width="1" />
+  <text x="65" y="75" font-family="system-ui, sans-serif" font-size="22" font-weight="bold" fill="#f8fafc">VAIBHAV SHARMA</text>
+  <text x="65" y="100" font-family="monospace" font-size="11" fill="#00f0ff">B.Tech Computer Science Engineering | AI/ML &amp; Robotics Engineer</text>
+
+  <!-- Section 1: Education & Philosophy -->
+  <text x="40" y="170" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">&gt; 01. EDUCATION &amp; CORE FOCUS</text>
+  <line x1="40" y1="180" x2="560" y2="180" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  <rect x="40" y="195" width="520" height="60" rx="4" fill="#0b111e" />
+  <text x="55" y="220" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#e2e8f0">B.Tech in Computer Science and Engineering</text>
+  <text x="55" y="240" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Focus: Artificial Intelligence, Computer Vision, Embedded Robotics &amp; Autonomous Systems</text>
+
+  <!-- Section 2: Technical Skills Matrix -->
+  <text x="40" y="295" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">&gt; 02. TECHNICAL SKILLS</text>
+  <line x1="40" y1="305" x2="560" y2="305" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  <g font-family="system-ui, sans-serif" font-size="11" fill="#cbd5e1">
+    <text x="40" y="330"><tspan font-weight="bold" fill="#00f0ff">Languages:</tspan> Python, C, C#, JavaScript, SQL</text>
+    <text x="40" y="355"><tspan font-weight="bold" fill="#00f0ff">AI &amp; Vision:</tspan> Machine Learning, Computer Vision, OpenCV, MediaPipe</text>
+    <text x="40" y="380"><tspan font-weight="bold" fill="#00f0ff">Hardware &amp; IoT:</tspan> Arduino, Microcontrollers, Motor Drivers (L298N), Sensors</text>
+    <text x="40" y="405"><tspan font-weight="bold" fill="#00f0ff">Development:</tspan> HTML5, CSS3, JavaScript ES6+, .NET, Git, GitHub</text>
+  </g>
+
+  <!-- Section 3: Engineering Projects -->
+  <text x="40" y="455" font-family="monospace" font-size="13" font-weight="bold" fill="#38bdf8">&gt; 03. ENGINEERING PROJECTS</text>
+  <line x1="40" y1="465" x2="560" y2="465" stroke="rgba(255,255,255,0.1)" stroke-width="1" />
+  
+  <rect x="40" y="480" width="520" height="65" rx="4" fill="#0b111e" />
+  <text x="55" y="505" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Vision-Based Autonomous Navigation for UGV</text>
+  <text x="55" y="525" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Python, OpenCV, Arduino, Ultrasonic Grid, Serial Telemetry (In Development)</text>
+
+  <rect x="40" y="555" width="520" height="65" rx="4" fill="#0b111e" />
+  <text x="55" y="580" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">EcoSort Rover &amp; Auto-Aiming Smart Trash Can</text>
+  <text x="55" y="600" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">Arduino, Sensor Fusion, Servo Actuation, Embedded C++ (Working Prototypes)</text>
+
+  <rect x="40" y="630" width="520" height="65" rx="4" fill="#0b111e" />
+  <text x="55" y="655" font-family="system-ui, sans-serif" font-size="12" font-weight="bold" fill="#f8fafc">Image to Pencil Sketch Filter &amp; Smart Door Alarm</text>
+  <text x="55" y="675" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">OpenCV, Mathematical Color Dodge, Acoustic ToF Perimeter Monitoring</text>
+
+  <!-- Document Footer -->
+  <g transform="translate(300, 750)">
+    <text x="0" y="0" font-family="monospace" font-size="10" fill="#64748b" text-anchor="middle">OFFICIAL ENGINEERING RESUME // VAIBHAV SHARMA // 2026</text>
+  </g>
+</svg>

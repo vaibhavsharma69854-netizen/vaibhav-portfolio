@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="ecoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061214" />
+      <stop offset="100%" stop-color="#02080a" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#ecoBg)" rx="12" />
+
+  <!-- Grid Blueprint Background -->
+  <g stroke="rgba(16, 185, 129, 0.08)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="500" y1="0" x2="500" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+    <line x1="700" y1="0" x2="700" y2="450" />
+  </g>
+
+  <!-- EcoSort Rover Sorting Mechanism Illustration -->
+  <g transform="translate(400, 225)">
+    <!-- Waste Intake Funnel -->
+    <path d="M-120 -130 L120 -130 L60 -60 L-60 -60 Z" fill="#0f2922" stroke="#10b981" stroke-width="2" />
+    <text x="0" y="-90" font-family="monospace" font-size="10" fill="#10b981" text-anchor="middle">INTAKE &amp; SENSING BED</text>
+
+    <!-- Inductive & Proximity Coil Graphic -->
+    <circle cx="0" cy="-60" r="18" fill="none" stroke="#00f0ff" stroke-width="2" stroke-dasharray="3 3" />
+    <circle cx="0" cy="-60" r="8" fill="#10b981" />
+
+    <!-- Sorting Chute / Flapper Gate -->
+    <line x1="0" y1="-40" x2="-55" y2="35" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" />
+    <circle cx="0" cy="-40" r="6" fill="#00f0ff" />
+    <path d="M-25 -20 A 40 40 0 0 0 25 -20" fill="none" stroke="#10b981" stroke-width="1.5" stroke-dasharray="2 4" />
+
+    <!-- Dual Partition Bins -->
+    <rect x="-180" y="50" width="160" height="90" rx="8" fill="#061c16" stroke="#10b981" stroke-width="1.5" />
+    <text x="-100" y="90" font-family="monospace" font-size="11" fill="#10b981" text-anchor="middle" font-weight="bold">BIN A: METALLIC</text>
+    <text x="-100" y="110" font-family="monospace" font-size="9" fill="#6ee7b7" text-anchor="middle">RECYCLABLE CORE</text>
+
+    <rect x="20" y="50" width="160" height="90" rx="8" fill="#082026" stroke="#00f0ff" stroke-width="1.5" />
+    <text x="100" y="90" font-family="monospace" font-size="11" fill="#00f0ff" text-anchor="middle" font-weight="bold">BIN B: ORGANIC</text>
+    <text x="100" y="110" font-family="monospace" font-size="9" fill="#7dd3fc" text-anchor="middle">GENERAL SORT</text>
+  </g>
+
+  <!-- Telemetry Header -->
+  <g font-family="monospace" font-size="11" fill="#94a3b8">
+    <text x="30" y="45" fill="#10b981">&gt; SYSTEM: ECOSORT ROVER PROTOTYPE</text>
+    <text x="30" y="65">&gt; CLASSIFICATION: SENSOR-DRIVEN SEGREGATION</text>
+    <text x="770" y="45" text-anchor="end" fill="#00f0ff">&gt; ACCURACY: 92% // DUAL CHUTE</text>
+  </g>
+</svg>

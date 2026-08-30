@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgGrad)" rx="24" />
+  
+  <!-- Subtle Grid Lines -->
+  <g stroke="rgba(0, 240, 255, 0.08)" stroke-width="1">
+    <line x1="50" y1="0" x2="50" y2="600" />
+    <line x1="150" y1="0" x2="150" y2="600" />
+    <line x1="250" y1="0" x2="250" y2="600" />
+    <line x1="350" y1="0" x2="350" y2="600" />
+    <line x1="450" y1="0" x2="450" y2="600" />
+    <line x1="550" y1="0" x2="550" y2="600" />
+    
+    <line x1="0" y1="50" x2="600" y2="50" />
+    <line x1="0" y1="150" x2="600" y2="150" />
+    <line x1="0" y1="250" x2="600" y2="250" />
+    <line x1="0" y1="350" x2="600" y2="350" />
+    <line x1="0" y1="450" x2="600" y2="450" />
+    <line x1="0" y1="550" x2="600" y2="550" />
+  </g>
+
+  <!-- Concentric Target Rings -->
+  <circle cx="300" cy="270" r="180" fill="none" stroke="rgba(0, 240, 255, 0.15)" stroke-width="1" stroke-dasharray="4 6" />
+  <circle cx="300" cy="270" r="130" fill="none" stroke="rgba(59, 130, 246, 0.2)" stroke-width="1" />
+  <circle cx="300" cy="270" r="85" fill="none" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1.5" stroke-dasharray="10 8" />
+
+  <!-- Engineer Silhouette / Holographic Portrait Core -->
+  <g transform="translate(300, 270)">
+    <!-- Base Glow -->
+    <circle cx="0" cy="-20" r="60" fill="url(#cyanGrad)" opacity="0.15" filter="url(#glow)" />
+    
+    <!-- Head Schematic -->
+    <circle cx="0" cy="-35" r="42" fill="#131e33" stroke="#00f0ff" stroke-width="2" />
+    <path d="M-25 -35 A 25 25 0 0 1 25 -35" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="3 3" />
+    <circle cx="0" cy="-35" r="16" fill="rgba(0,240,255,0.2)" stroke="#00f0ff" stroke-width="1.5" />
+    <circle cx="0" cy="-35" r="4" fill="#00f0ff" />
+    
+    <!-- Torso / Circuit Shoulders -->
+    <path d="M-65 75 C -65 25, -45 5, 0 5 C 45 5, 65 25, 65 75 Z" fill="#111c30" stroke="#3b82f6" stroke-width="2" />
+    <path d="M-40 75 L-20 25 L0 45 L20 25 L40 75" fill="none" stroke="#00f0ff" stroke-width="1.5" opacity="0.7" />
+    
+    <!-- Futuristic Nodes & Traces -->
+    <circle cx="-35" cy="40" r="3" fill="#00f0ff" />
+    <circle cx="35" cy="40" r="3" fill="#00f0ff" />
+    <line x1="-35" y1="40" x2="-55" y2="40" stroke="#00f0ff" stroke-width="1" />
+    <line x1="35" y1="40" x2="55" y2="40" stroke="#00f0ff" stroke-width="1" />
+  </g>
+
+  <!-- HUD Interface Elements & Telemetry Overlay -->
+  <g font-family="monospace" font-size="11" fill="#00f0ff" opacity="0.85">
+    <text x="50" y="70">&gt; IDENTITY: VAIBHAV SHARMA</text>
+    <text x="50" y="90">&gt; ROLE: CS ENGINEER / AI &amp; ROBOTICS</text>
+    <text x="50" y="110">&gt; CORE: HARDWARE + SOFTWARE</text>
+    
+    <text x="400" y="70" text-anchor="end">&gt; STATUS: ONLINE</text>
+    <text x="400" y="90" text-anchor="end">&gt; ARCH: DUAL-TIER EDGE</text>
+    <text x="400" y="110" text-anchor="end">&gt; LAB: DIGITAL_CORE_V2.6</text>
+  </g>
+
+  <!-- Lower Tech Banner -->
+  <rect x="50" y="490" width="500" height="60" rx="8" fill="rgba(15, 23, 42, 0.8)" stroke="rgba(0, 240, 255, 0.3)" stroke-width="1" />
+  <g font-family="monospace" font-size="12" fill="#94a3b8">
+    <text x="75" y="525" fill="#00f0ff">SYS_CORE:</text>
+    <text x="160" y="525">Learn → Build → Break → Improve → Repeat</text>
+  </g>
+  <circle cx="520" cy="520" r="5" fill="#10b981" />
+</svg>

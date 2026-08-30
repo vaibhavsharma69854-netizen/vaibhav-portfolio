@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sketchBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e1017" />
+      <stop offset="100%" stop-color="#05070a" />
+    </linearGradient>
+    <linearGradient id="purpleCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#sketchBg)" rx="12" />
+
+  <!-- Split Comparison Layout (Input Photo vs Vector Pencil Sketch) -->
+  <g transform="translate(400, 225)">
+    <!-- Left: Original Image Wireframe Simulation -->
+    <rect x="-320" y="-120" width="300" height="240" rx="8" fill="#181e2b" stroke="#3b82f6" stroke-width="1.5" />
+    <text x="-170" y="-85" font-family="monospace" font-size="11" fill="#3b82f6" text-anchor="middle">INPUT PHOTOGRAPH</text>
+    <circle cx="-170" cy="15" r="50" fill="#243048" />
+    <path d="M-230 75 Q -170 -20, -110 75" fill="none" stroke="#60a5fa" stroke-width="2" />
+
+    <!-- Center Transform Matrix Arrow -->
+    <circle cx="0" cy="0" r="28" fill="#0f172a" stroke="#00f0ff" stroke-width="2" />
+    <path d="M-10 0 L10 0 M5 -6 L11 0 L5 6" fill="none" stroke="#00f0ff" stroke-width="2.5" stroke-linecap="round" />
+    <text x="0" y="42" font-family="monospace" font-size="9" fill="#00f0ff" text-anchor="middle">OPENCV DODGE</text>
+
+    <!-- Right: Pencil Sketch Output -->
+    <rect x="20" y="-120" width="300" height="240" rx="8" fill="#0b0f14" stroke="#00f0ff" stroke-width="1.5" />
+    <text x="170" y="-85" font-family="monospace" font-size="11" fill="#00f0ff" text-anchor="middle">PENCIL SKETCH (DODGE BLEND)</text>
+    
+    <!-- Crosshatch and Shading lines -->
+    <g stroke="rgba(255,255,255,0.7)" stroke-width="1.2">
+      <circle cx="170" cy="15" r="50" fill="none" stroke="#e2e8f0" stroke-dasharray="3 2" />
+      <line x1="130" y1="-10" x2="210" y2="40" opacity="0.4" />
+      <line x1="135" y1="-15" x2="215" y2="35" opacity="0.4" />
+      <line x1="125" y1="-5" x2="205" y2="45" opacity="0.4" />
+      <path d="M110 75 Q 170 -20, 230 75" fill="none" stroke="#f8fafc" stroke-width="1.5" stroke-dasharray="2 1" />
+    </g>
+  </g>
+
+  <!-- Telemetry Header -->
+  <g font-family="monospace" font-size="11" fill="#94a3b8">
+    <text x="30" y="45" fill="#8b5cf6">&gt; SYSTEM: IMAGE TO PENCIL SKETCH CONVERTER</text>
+    <text x="30" y="65">&gt; PIPELINE: GRAYSCALE → INVERT → GAUSSIAN BLUR → COLOR DODGE</text>
+    <text x="770" y="45" text-anchor="end" fill="#00f0ff">&gt; LATENCY: 12ms // 60 FPS</text>
+  </g>
+</svg>

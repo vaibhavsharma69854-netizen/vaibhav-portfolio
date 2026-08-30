@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="trashBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1320" />
+      <stop offset="100%" stop-color="#030712" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#trashBg)" rx="12" />
+
+  <!-- Grid Blueprint Background -->
+  <g stroke="rgba(59, 130, 246, 0.08)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="450" />
+    <line x1="200" y1="0" x2="200" y2="450" />
+    <line x1="300" y1="0" x2="300" y2="450" />
+    <line x1="400" y1="0" x2="400" y2="450" />
+    <line x1="500" y1="0" x2="500" y2="450" />
+    <line x1="600" y1="0" x2="600" y2="450" />
+    <line x1="700" y1="0" x2="700" y2="450" />
+  </g>
+
+  <!-- Auto-Aiming Smart Trash Can Mechanism Graphic -->
+  <g transform="translate(400, 240)">
+    <!-- Swivel Radar Arc -->
+    <path d="M-200 -120 A 240 240 0 0 1 200 -120" fill="none" stroke="rgba(0, 240, 255, 0.3)" stroke-width="2" stroke-dasharray="6 6" />
+    <line x1="0" y1="20" x2="-140" y2="-100" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="3 3" />
+    <line x1="0" y1="20" x2="140" y2="-100" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="3 3" />
+    
+    <!-- Bin Cylinder Body -->
+    <rect x="-70" y="-30" width="140" height="150" rx="12" fill="#0f172a" stroke="#3b82f6" stroke-width="2" />
+    
+    <!-- Open Motorized Lid Flap (Angled) -->
+    <line x1="-70" y1="-30" x2="-30" y2="-100" stroke="#00f0ff" stroke-width="4" stroke-linecap="round" />
+    <circle cx="-70" cy="-30" r="6" fill="#00f0ff" />
+    
+    <!-- Dual Ultrasonic Sensors (Scanning Eyes) -->
+    <g transform="translate(0, -50)">
+      <rect x="-45" y="-15" width="90" height="30" rx="6" fill="#1e293b" stroke="#00f0ff" stroke-width="1.5" />
+      <circle cx="-22" cy="0" r="10" fill="#020617" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="22" cy="0" r="10" fill="#020617" stroke="#38bdf8" stroke-width="1.5" />
+      <circle cx="-22" cy="0" r="4" fill="#00f0ff" />
+      <circle cx="22" cy="0" r="4" fill="#00f0ff" />
+    </g>
+
+    <!-- Base Turret Servo Motor Assembly -->
+    <rect x="-90" y="115" width="180" height="25" rx="4" fill="#1e293b" stroke="#3b82f6" stroke-width="1" />
+    <text x="0" y="132" font-family="monospace" font-size="9" fill="#94a3b8" text-anchor="middle">180° AZIMUTH SERVO TURNTABLE</text>
+  </g>
+
+  <!-- Telemetry Header -->
+  <g font-family="monospace" font-size="11" fill="#94a3b8">
+    <text x="30" y="45" fill="#38bdf8">&gt; SYSTEM: AUTO-AIMING SMART TRASH CAN</text>
+    <text x="30" y="65">&gt; ACTUATION: 180° SWIVEL TURRET + SERVO LID LIFT</text>
+    <text x="770" y="45" text-anchor="end" fill="#00f0ff">&gt; RESPONSE: &lt;200ms</text>
+  </g>
+</svg>

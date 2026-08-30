@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaibhav Sharma | Computer Science Engineer | AI/ML &amp; Robotics</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Personal portfolio and digital engineering lab of Vaibhav Sharma, a B.Tech Computer Science Engineering student and aspiring AI/ML &amp; Robotics Engineer building intelligent systems connecting software with the physical world." />
+  <meta name="keywords" content="Vaibhav Sharma, Computer Science Engineer, AI, Machine Learning, Computer Vision, Robotics, Autonomous Systems, OpenCV, Arduino, Embedded Systems, Python" />
+  <meta name="author" content="Vaibhav Sharma" />
+  <meta name="theme-color" content="#08090d" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vaibhavsharma.dev" />
+  <meta property="og:title" content="Vaibhav Sharma | AI/ML &amp; Robotics Engineer" />
+  <meta property="og:description" content="Building Intelligent Systems That Connect Software With The Physical World." />
+  <meta property="og:image" content="assets/images/project-ugv.svg" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vaibhav Sharma | AI/ML &amp; Robotics Engineer" />
+  <meta name="twitter:description" content="Building Intelligent Systems That Connect Software With The Physical World." />
+  <meta name="twitter:image" content="assets/images/project-ugv.svg" />
+
+  <!-- Schema.org JSON-LD Structured Microdata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Vaibhav Sharma",
+    "jobTitle": "Computer Science Engineer & Robotics Builder",
+    "description": "B.Tech Computer Science Engineering student exploring AI/ML, Computer Vision, Robotics, and autonomous systems.",
+    "url": "https://vaibhavsharma.dev",
+    "sameAs": [
+      "https://github.com/vaibhavsharma",
+      "https://linkedin.com/in/vaibhavsharma"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "Robotics",
+      "Autonomous Navigation",
+      "Embedded Systems",
+      "OpenCV",
+      "Python",
+      "Arduino",
+      "C Programming"
+    ]
+  }
+  </script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-system.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <!-- Interactive Background Canvas & Ambient Glows -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- =========================================================================
+       Sticky Navigation Bar
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#hero" class="nav-brand" aria-label="Vaibhav Sharma Home">
+        <div class="brand-logo-badge">VS</div>
+        <div class="brand-details">
+          <span class="brand-name">VAIBHAV SHARMA</span>
+          <span class="brand-status">
+            <span class="status-dot active" style="width: 5px; height: 5px;"></span>
+            DIGITAL LAB
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#currently-building" class="nav-link">Building</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#github" class="nav-link">Open Source</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Command Palette Trigger -->
+        <button class="cmd-trigger-btn" id="cmd-trigger-btn" title="Quick Command Palette (Ctrl+K)" aria-label="Open Command Palette">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search</span>
+          <span class="cmd-key">Ctrl+K</span>
+        </button>
+
+        <!-- Sound Effects Toggle -->
+        <button class="sound-toggle-btn" id="sound-toggle" title="Toggle Sound Effects" aria-label="Toggle Interface Audio">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       1. HERO / LANDING SECTION
+       ========================================================================= -->
+  <section class="section hero-section" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Left: Headline & Branding -->
+        <div class="hero-content">
+          <div class="hero-badge-row">
+            <span class="hero-tag">
+              <span class="status-dot active"></span>
+              Available for Internships &amp; Research
+            </span>
+            <span class="hero-tag" style="border-color: rgba(59, 130, 246, 0.4); color: #60a5fa; background: rgba(59, 130, 246, 0.1);">
+              B.Tech CSE // 2026
+            </span>
+          </div>
+
+          <h1 class="hero-name">
+            <span class="highlight">VAIBHAV</span> SHARMA
+          </h1>
+
+          <p class="hero-role">
+            Computer Science Engineer &bull; AI/ML &bull; Robotics &bull; Builder
+          </p>
+
+          <h2 class="hero-headline">
+            "Building Intelligent Systems That Connect Software With The Physical World."
+          </h2>
+
+          <p class="hero-description">
+            I'm a Computer Science Engineering student exploring Artificial Intelligence, Machine Learning, Computer Vision, Robotics, and software development. I enjoy turning ideas into real-world projects by combining code, electronics and intelligent systems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              Explore My Work
+            </a>
+            <button class="btn btn-secondary" onclick="window.triggerResumeDownload()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/in/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+            <button class="social-link" style="background: none; border: none; cursor: pointer;" onclick="window.copyEmailToClipboard()">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              Email (Copy)
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Holographic Engineering Telemetry Panel -->
+        <div class="hero-visual">
+          <div class="telemetry-card">
+            <div class="telemetry-header">
+              <span class="telemetry-title">Digital Lab Telemetry // Sys-01</span>
+              <span class="status-indicator">
+                <span class="status-dot active"></span>
+                ONLINE
+              </span>
+            </div>
+
+            <div class="telemetry-metrics-grid">
+              <div class="telemetry-metric-box">
+                <span class="metric-label">CORE FOCUS</span>
+                <span class="metric-value">AI &amp; Robotics</span>
+              </div>
+              <div class="telemetry-metric-box">
+                <span class="metric-label">ACTIVE PROTOTYPES</span>
+                <span class="metric-value">05 Built</span>
+              </div>
+              <div class="telemetry-metric-box">
+                <span class="metric-label">COMPUTE TIER</span>
+                <span class="metric-value">Edge Vision</span>
+              </div>
+              <div class="telemetry-metric-box">
+                <span class="metric-label">HARDWARE CORE</span>
+                <span class="metric-value">Arduino / Sensors</span>
+              </div>
+            </div>
+
+            <div class="telemetry-feed">
+              &gt; sys.init("autonomous-ugv-vision")<br />
+              &gt; sensors.poll(sonar_grid, optical_cam) → OK<br />
+              &gt; latency: 38ms | baud: 115200 | state: EXPLORING
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       2. ABOUT ME ("Who I Am")
+       ========================================================================= -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Identity &amp; Trajectory</span>
+        <h2 class="section-title">Who I Am</h2>
+        <p class="section-subtitle">
+          More than a resume: a personal narrative of curiosity, engineering experimentation, and continuous iteration.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: Profile Schematic Image -->
+        <div class="about-image-wrapper">
+          <img src="assets/images/avatar.svg" alt="Vaibhav Sharma Technical Avatar" class="about-image" loading="lazy" />
+          <div class="about-image-overlay">
+            <span>&gt; Vaibhav Sharma // CSE Student &amp; Robotics Explorer</span>
+          </div>
+        </div>
+
+        <!-- Right: Story & Philosophy -->
+        <div class="about-content">
+          <div class="about-story">
+            <p>
+              I am a <strong>B.Tech CSE-Robotics and AI student</strong> fascinated by the intersection where digital algorithms meet physical mechanics. While much of computer science happens purely inside the browser or the cloud, my true passion lies in giving code eyes, ears, and wheels.
+            </p>
+            <p>
+              I actively explore <strong>AI/ML, Computer Vision, Drones and Robotics</strong>. Whether it is engineering a serialized OpenCV vision pipeline for an autonomous ground vehicle or writing bare-metal firmware for sensor-actuated sorting rovers, I am driven by building practical, tangible technology.
+            </p>
+            <p>
+              I believe true engineering growth comes not from claiming unearned mastery, but from relentless curiosity, hands-on experimentation, and turning theoretical knowledge into functioning hardware and software prototypes.
+            </p>
+          </div>
+
+          <!-- Philosophy Banner -->
+          <div class="philosophy-card">
+            <div class="philosophy-title">My Engineering Philosophy</div>
+            <div class="philosophy-mantra">
+              Learn <span>&rarr;</span> Build <span>&rarr;</span> Break <span>&rarr;</span> Improve <span>&rarr;</span> Repeat 
+              <br> <span>First Principle Thinking</span>
+            </div>
+          </div>
+
+          <!-- Quick Highlight Metrics -->
+          <div class="about-highlights-grid">
+            <div class="highlight-box">
+              <div class="num">B.Tech</div>
+              <div class="desc">CSE-Robotics and AI</div>
+            </div>
+            <div class="highlight-box">
+              <div class="num">04+</div>
+              <div class="desc">Hardware/AI Projects</div>
+            </div>
+            <div class="highlight-box">
+              <div class="num">&infin;</div>
+              <div class="desc">Learning Mindset</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. SKILLS MATRIX
+       ========================================================================= -->
+  <section class="section" id="skills" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Capabilities &amp; Stack</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">
+          Technologies and tools I actively learn, write, and integrate across software and hardware projects.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. Programming -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </span>
+            <h3 class="category-name">Programming</h3>
+          </div>
+          <div class="skill-chips-list">
+            <div class="skill-chip"><span class="skill-dot"></span> Python</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Python-library</div>
+            <div class="skill-chip"><span class="skill-dot"></span> C</div>
+            <div class="skill-chip"><span class="skill-dot"></span> C#</div>
+            <div class="skill-chip"><span class="skill-dot"></span> ROS 2</div>
+            <div class="skill-chip"><span class="skill-dot"></span> React.Js</div>
+            <div class="skill-chip"><span class="skill-dot"></span> SQL</div>
+          </div>
+        </div>
+
+        <!-- 2. AI / Machine Learning -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+            </span>
+            <h3 class="category-name">AI &amp; Machine Learning</h3>
+          </div>
+          <div class="skill-chips-list">
+            <div class="skill-chip"><span class="skill-dot"></span> Machine Learning</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Computer Vision</div>
+            <div class="skill-chip"><span class="skill-dot"></span> OpenCV</div>
+            <div class="skill-chip"><span class="skill-dot"></span> MediaPipe</div>
+            <div class="skill-chip"><span class="skill-dot"></span> AI Fundamentals</div>
+          </div>
+        </div>
+
+        <!-- 3. Robotics & Hardware -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </span>
+            <h3 class="category-name">Robotics &amp; Hardware</h3>
+          </div>
+          <div class="skill-chips-list">
+            <div class="skill-chip"><span class="skill-dot"></span> Arduino</div>
+            <div class="skill-chip"><span class="skill-dot"></span> ESP32</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Raspberry Pi</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Sensors &amp; Transducers</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Motor Drivers</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Embedded Systems</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Robotics</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Autonomous Systems</div>
+          </div>
+        </div>
+
+        <!-- 4. Development & Tools -->
+        <div class="skill-category-card">
+          <div class="category-header">
+            <span class="category-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            </span>
+            <h3 class="category-name">Development &amp; Tools</h3>
+          </div>
+          <div class="skill-chips-list">
+            <div class="skill-chip"><span class="skill-dot"></span> HTML5 &amp; CSS3</div>
+            <!-- <div class="skill-chip"><span class="skill-dot"></span> Modern JavaScript</div> -->
+            <div class="skill-chip"><span class="skill-dot"></span> .NET Framework</div>
+            <div class="skill-chip"><span class="skill-dot"></span> Git Version Control</div>
+            <div class="skill-chip"><span class="skill-dot"></span> GitHub</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. CURRENTLY BUILDING (Spotlight)
+       ========================================================================= -->
+  <section class="section" id="currently-building">
+    <div class="container">
+      <div class="currently-building-card">
+        <div class="building-header">
+          <div class="building-title-group">
+            <span class="section-tag">
+              <span class="status-dot active"></span>
+              Live Lab Build // Active Engineering Project
+            </span>
+            <h3>Vision-Based Autonomous Navigation for UGV</h3>
+            <p>
+              An unmanned ground vehicle combining real-time computer vision (OpenCV) with low-level microcontrollers (Arduino) to navigate unstructured terrain autonomously.
+            </p>
+          </div>
+          <div>
+            <span class="status-indicator" style="font-size: 0.8125rem;">
+              <span class="status-dot active"></span>
+              STATUS: IN DEVELOPMENT
+            </span>
+          </div>
+        </div>
+
+        <!-- Roadmap Progress Stepper -->
+        <div class="roadmap-timeline">
+          <div class="roadmap-step complete">
+            <span class="step-num">STEP 01</span>
+            <div class="step-name">Research</div>
+            <span class="step-status">✓ Completed</span>
+          </div>
+          <div class="roadmap-step complete">
+            <span class="step-num">STEP 02</span>
+            <div class="step-name">Hardware Prototype</div>
+            <span class="step-status">✓ Chassis Built</span>
+          </div>
+          <div class="roadmap-step complete">
+            <span class="step-num">STEP 03</span>
+            <div class="step-name">Sensor Integration</div>
+            <span class="step-status">✓ Ultrasonic / IMU</span>
+          </div>
+          <div class="roadmap-step active">
+            <span class="step-num">STEP 04</span>
+            <div class="step-name">Computer Vision</div>
+            <span class="step-status">⚡ In Progress (OpenCV)</span>
+          </div>
+          <div class="roadmap-step upcoming">
+            <span class="step-num">STEP 05</span>
+            <div class="step-name">Navigation Alg.</div>
+            <span class="step-status">○ Path Planning</span>
+          </div>
+          <div class="roadmap-step upcoming">
+            <span class="step-num">STEP 06</span>
+            <div class="step-name">Autonomous Testing</div>
+            <span class="step-status">○ Field Trials</span>
+          </div>
+        </div>
+
+        <div class="building-footer-actions">
+          <button class="btn btn-primary" onclick="window.openProjectCaseStudy('ugv-nav')">
+            Follow the build &rarr; (View Detailed Case Study)
+          </button>
+          <a href="https://github.com/vaibhavsharma/ugv-vision-navigation" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            GitHub Repository
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. FEATURED PROJECTS ("Things I've Built")
+       ========================================================================= -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio &amp; Prototypes</span>
+        <h2 class="section-title">Things I've Built</h2>
+        <p class="section-subtitle">
+          Real-world applications, embedded hardware prototypes, and computer vision systems built with code and electronics.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter-bar" id="project-filters"></div>
+
+      <!-- Dynamic Project Cards Grid -->
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. CERTIFICATES & LEARNING GALLERY
+       ========================================================================= -->
+  <section class="section" id="certificates" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Verification &amp; Accreditations</span>
+        <h2 class="section-title">Learning &amp; Certifications</h2>
+        <p class="section-subtitle">
+          Structured coursework and technical certifications in Artificial Intelligence, Computer Vision, and Embedded Systems.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="projects-filter-bar" id="cert-filters"></div>
+
+      <!-- Certificates Grid -->
+      <div class="certs-grid" id="certs-grid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. ACHIEVEMENTS & EXPERIENCE ("My Journey")
+       ========================================================================= -->
+  <section class="section" id="journey">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Chronology</span>
+        <h2 class="section-title">My Journey</h2>
+        <p class="section-subtitle">
+          Key milestones, technical projects, and the trajectory toward AI/Robotics engineering.
+        </p>
+      </div>
+
+      <div class="timeline-wrapper" id="timeline-list"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. GITHUB & OPEN SOURCE
+       ========================================================================= -->
+  <!-- <section class="section" id="github" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Open Source &amp; Code</span>
+        <h2 class="section-title">Code, Experiments &amp; Open Source</h2>
+        <p class="section-subtitle">
+          Public repositories, code experiments, and continuous commit cadence.
+        </p>
+      </div>
+
+      <div class="github-card">
+        <div class="github-activity-header">
+          <div>
+            <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--text-primary);">
+              GitHub Contribution Heatmap
+            </h3>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+              @vaibhavsharma &bull; Continuous learning and project commits
+            </span>
+          </div>
+          <a href="https://github.com/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            Follow on GitHub
+          </a>
+        </div>
+
+        Commit Grid Simulation
+        <div class="commit-grid-wrapper">
+          <div class="commit-grid" id="commit-grid"></div>
+        </div>
+
+        Dynamic Repositories List
+        <div class="github-repos-grid" id="github-repos-grid"></div>
+      </div>
+    </div>
+  </section> 
+
+  <!- =========================================================================
+       10. LEARNING / NOW SECTION
+       ========================================================================= -->
+  <section class="section" id="learning-now">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Current Horizon</span>
+        <h2 class="section-title">What I'm Learning Now</h2>
+        <p class="section-subtitle">
+          Active technical topics, concepts, and domains under continuous study.
+        </p>
+      </div>
+
+      <div class="learning-radar-grid">
+        <div class="learning-item">
+          <span class="learning-icon">⚡</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">AI / Machine Learning</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Deep Learning &amp; Tensor Ops</span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <span class="learning-icon">👁️</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">Computer Vision</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">OpenCV &amp; Feature Extraction</span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <span class="learning-icon">🤖</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">Robotics &amp; Control</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">PID Tuning &amp; Motor Feedback</span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <span class="learning-icon">🧭</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">Autonomous Navigation </h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Path Planning &amp; Sensor Fusion</span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <span class="learning-icon">⚙️</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">Sensors &amp; Elements</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);"> </span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <span class="learning-icon">⚙️</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">Drones Technology &amp; Robots</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);"> Open CV &amp; Feedback</span>
+          </div>
+        </div>
+        <div class="learning-item">
+          <span class="learning-icon">🔌</span>
+          <div>
+            <h4 style="font-size: 0.9375rem; font-weight: 600; color: var(--text-primary);">Embedded Systems</h4>
+            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Interrupts &amp; Serial Protocols</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. RESUME SECTION
+       ========================================================================= -->
+  <section class="section" id="resume" style="background: rgba(255, 255, 255, 0.01);">
+    <div class="container">
+      <div class="resume-box">
+        <div>
+          <span class="section-tag">Formal Profile</span>
+          <h2 class="section-title" style="font-size: clamp(2rem, 3.5vw, 2.75rem); margin-bottom: 1rem;">
+            Want the full picture?
+          </h2>
+          <p class="section-subtitle" style="margin-left: 0; margin-bottom: 2rem;">
+            Explore my formal education, technical skills, academic coursework, engineering projects, and hands-on experience.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn btn-primary" onclick="window.triggerResumeDownload()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume (PDF)
+            </button>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="resume-preview-wrapper" onclick="window.triggerResumeDownload()" style="cursor: pointer;" title="Click to view/download resume">
+          <img src="assets/images/resume-preview.svg" alt="Vaibhav Sharma Resume Mockup Preview" class="resume-preview-img" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. CONTACT SECTION ("Let's Build Something.")
+       ========================================================================= -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Left: Direct Reach-out -->
+        <div>
+          <span class="section-tag">Connect &amp; Collaborate</span>
+          <h2 class="section-title" style="margin-bottom: 1rem;">Let's Build Something.</h2>
+          <p class="section-subtitle" style="margin-left: 0; margin-bottom: 2rem;">
+            I'm always interested in learning, building, and collaborating on meaningful technology projects, internships, and robotics research.
+          </p>
+
+          <div class="contact-info-list">
+            <!-- Email -->
+            <div class="contact-card-item">
+              <div class="contact-card-left">
+                <div class="contact-icon-box">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">DIRECT EMAIL</div>
+                  <div style="font-weight: 600; color: var(--text-primary);">vaibhav.sharma@example.com</div>
+                </div>
+              </div>
+              <button class="btn btn-outline btn-sm" onclick="window.copyEmailToClipboard()">
+                Copy
+              </button>
+            </div>
+
+            <!-- GitHub -->
+            <a href="https://github.com/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="contact-card-item" style="text-decoration: none;">
+              <div class="contact-card-left">
+                <div class="contact-icon-box" style="background: rgba(255,255,255,0.05); border-color: var(--border-medium); color: #f8fafc;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">GITHUB PROFILE</div>
+                  <div style="font-weight: 600; color: var(--text-primary);">github.com/vaibhavsharma</div>
+                </div>
+              </div>
+              <span class="btn btn-outline btn-sm">Visit &rarr;</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="contact-card-item" style="text-decoration: none;">
+              <div class="contact-card-left">
+                <div class="contact-icon-box" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.3); color: #60a5fa;">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </div>
+                <div>
+                  <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">LINKEDIN NETWORK</div>
+                  <div style="font-weight: 600; color: var(--text-primary);">linkedin.com/in/vaibhavsharma</div>
+                </div>
+              </div>
+              <span class="btn btn-outline btn-sm">Connect &rarr;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Reactive Contact Form -->
+        <div class="contact-form">
+          <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+            Send Transmission
+          </h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="user-name" class="form-label">&gt; YOUR NAME</label>
+              <input type="text" id="user-name" class="form-input" placeholder="e.g. Dr. Alex Vance" required />
+            </div>
+
+            <div class="form-group">
+              <label for="user-email" class="form-label">&gt; YOUR EMAIL</label>
+              <input type="email" id="user-email" class="form-input" placeholder="e.g. alex@roboticslab.org" required />
+            </div>
+
+            <div class="form-group">
+              <label for="user-message" class="form-label">&gt; MESSAGE / PROJECT BRIEF</label>
+              <textarea id="user-message" class="form-textarea" placeholder="Hello Vaibhav, I saw your autonomous UGV project and would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              Send Message
+            </button>
+
+            <div id="form-status" class="form-status-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+            <div class="brand-logo-badge" style="width: 32px; height: 32px; font-size: 0.875rem;">VS</div>
+            <span style="font-family: var(--font-heading); font-weight: 700; font-size: 1.125rem; color: var(--text-primary);">
+              VAIBHAV SHARMA
+            </span>
+          </div>
+          <p style="color: var(--text-secondary); font-size: 0.875rem;">
+            "Building. Learning. Engineering the Future."
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="https://github.com/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="social-link">GitHub</a>
+          <a href="https://linkedin.com/in/vaibhavsharma" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+          <button class="social-link" style="background: none; border: none; cursor: pointer;" onclick="window.copyEmailToClipboard()">Email</button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Vaibhav Sharma. All rights reserved.
+        </div>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <span id="live-ist-clock" style="color: var(--accent-cyan);">2026-08-30 IST</span>
+          <span>&bull;</span>
+          <a href="#hero" style="color: var(--text-muted); text-decoration: none;" onmouseover="this.style.color='var(--accent-cyan)'" onmouseout="this.style.color='var(--text-muted)'">
+            Back to Top &uarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODAL: Interactive Project Case Study Engine
+       ========================================================================= -->
+  <div class="modal-overlay" id="case-study-modal" role="dialog" aria-modal="true" aria-labelledby="modal-project-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="section-tag" style="margin-bottom: 0.25rem;">Engineering Case Study</span>
+          <h3 class="modal-project-title" id="modal-project-title" style="font-family: var(--font-heading); font-size: 1.35rem; color: var(--text-primary);"></h3>
+          <p class="modal-project-subtitle" style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-cyan);"></p>
+        </div>
+        <button class="modal-close-btn" aria-label="Close Case Study Modal">&times;</button>
+      </div>
+      <div class="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL: Command Palette (Cmd+K / Ctrl+K)
+       ========================================================================= -->
+  <div class="cmd-palette-overlay" id="command-palette" role="dialog" aria-modal="true" aria-label="Command Palette">
+    <div class="cmd-palette-box">
+      <div class="cmd-input-row">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--accent-cyan);"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" id="cmd-search-input" class="cmd-search-input" placeholder="Type a section or command... (e.g. Projects, UGV, Resume, Contact)" autocomplete="off" />
+      </div>
+      <ul class="cmd-results-list" id="cmd-results-list"></ul>
+      <div class="cmd-footer">
+        <span>Use &uarr; &darr; to navigate</span>
+        <span>↵ to select &bull; ESC to close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Entrypoint -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
