@@ -5,30 +5,31 @@
 
 export const journeyData = [
    {
-    year: "2010-2025",
-    badge: "Foundation",
-    title: "Senior Secondary & High School Education",
-    type: "Schooling",
-    summary: "Completed schooling with a focus on Science and Mathematics (PCM with Computer Science), developing a deep interest in computing, logical problem solving, and electronics.",
-    details: [
-      "Core focus on Physics, Mathematics, and Computer Science fundamentals.",
-      "Early hands-on experiments with programming, algorithmic logic, and basic electronics.",
-      "Active participation in school science exhibitions, coding challenges, and tech symposiums."
-    ],
-    highlight: false
-  },
-  {
-    year: "2025-2029",
-    badge: "Undergraduate",
-    title: "B.Tech CSE- Robotics and AI",
-    type: "Academic Journey",
-    summary: "Pursuing undergraduate degree in CSE-Robotics and AI, building strong theoretical and applied foundations in algorithms, operating systems, and computer architecture.",
-    details: [
-      "Rigorous coursework in Data Structures, Programming, Computer Networks, and Database Systems.",
-      "Actively applying classroom computer science fundamentals directly into physical hardware and software projects."
-    ],
-    highlight: false
-  },
+      year: "2025-2029",
+      badge: "Undergraduate",
+      title: "B.Tech CSE- Robotics and AI",
+      type: "Academic Journey",
+      summary: "Pursuing undergraduate degree in CSE-Robotics and AI, building strong theoretical and applied foundations in algorithms, operating systems, and computer architecture.",
+      details: [
+        "Rigorous coursework in Data Structures, Programming, Computer Networks, and Database Systems.",
+        "Actively applying classroom computer science fundamentals directly into physical hardware and software projects."
+      ],
+      highlight: false
+    },
+    {
+      year: "2010-2025",
+      badge: "Foundation",
+      title: "Senior Secondary & High School Education",
+      type: "Schooling",
+      summary: "Completed schooling with a focus on Science and Mathematics (PCM with Computer Science), developing a deep interest in computing, logical problem solving, and electronics.",
+      details: [
+        "Core focus on Physics, Mathematics, and Computer Science fundamentals.",
+        "Early hands-on experiments with programming, algorithmic logic, and basic electronics.",
+        "Active participation in school science exhibitions, coding challenges, and tech symposiums."
+      ],
+      highlight: false
+    },
+  
   // {
   //   year: "2026 - Present",
   //   badge: "Core Focus",
@@ -41,8 +42,7 @@ export const journeyData = [
   //     "Actively preparing for engineering hackathons and robotics symposiums."
   //   ],
   //   highlight: true
-  // },
-  
+  // }
   // {
   //   year: "2025 - 2026",
   //   badge: "Milestone",
